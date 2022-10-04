@@ -1,8 +1,8 @@
-# refactoring-ruby-edition
+# Software Books, Talks, & More Notes
 
-My notes as I read through ["Refactoring: Ruby Edition"](https://martinfowler.com/books/refactoringRubyEd.html) by Jay Fields, Shane Harvie, and Martin Fowler with Kent Beck.
+My notes as I read through books, watch talks and generally just learn!
 
 ## Table of Contents
 
-- [Foreword / Preface / Chapter 1](docs/chapter1.md)
-- 
+- [Refactoring: Ruby Edition](docs/refactoring-ruby-edition/index.md)
+- [SOLID Object-Oriented Design by Sandi Metz](docs/solid_object_oriented_design_by_sandi_metz.md)
