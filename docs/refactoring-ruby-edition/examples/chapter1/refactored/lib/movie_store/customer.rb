@@ -33,13 +33,7 @@ module MovieStore
   private
 
     def total_charge
-      result = 0
-
-      @rentals.each do |element|
-        result += element.charge
-      end
-
-      result
+      @rentals.inject(0) { |sum, rental| sum + rental.charge }
     end
   end
 end
