@@ -15,3 +15,13 @@
 > Because each change is so small, any errors are easy to find.
 >
 > – _Refactoring: Ruby Edition, Chapter 1, pp. 10_ (emphasis mine)
+
+> Any fool can write code that a computer can understand.
+> Good programmers write code that humans can understand.
+>
+> – _Refactoring: Ruby Edition, Chapter 1, pp. 11_
+
+> I often refactor when I'm reading some code.
+> That way as I gain understanding, about the program, I embed that understanding into the code for later so I don't forget what I learned.
+>
+> – _Refactoring: Ruby Edition, Chapter 1, pp. 11_
