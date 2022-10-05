@@ -17,10 +17,10 @@ describe MovieStore::Customer do
     end
 
     context "with rentals" do
-      let(:movie1) { MovieStore::Movie.new("The Gooneys", MovieStore::Movie::CHILDRENS) }
+      let(:movie1) { MovieStore::Movie.new("The Gooneys", MovieStore::Price::ChildrensPrice.new) }
       let(:rental1) { MovieStore::Rental.new(movie1, 5) }
 
-      let(:movie2) { MovieStore::Movie.new("Bee Movie", MovieStore::Movie::NEW_RELEASE) }
+      let(:movie2) { MovieStore::Movie.new("Bee Movie", MovieStore::Price::NewReleasePrice.new) }
       let(:rental2) { MovieStore::Rental.new(movie2, 2) }
 
       it "displays a statement with totals" do
@@ -40,7 +40,7 @@ describe MovieStore::Customer do
     end
 
     context "with rentals" do
-      let(:movie) { MovieStore::Movie.new("The Gooneys", MovieStore::Movie::CHILDRENS) }
+      let(:movie) { MovieStore::Movie.new("The Gooneys", MovieStore::Price::ChildrensPrice.new) }
       let(:rental) { MovieStore::Rental.new(movie, 5) }
 
       it "displays a statement with totals" do

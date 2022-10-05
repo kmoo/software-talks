@@ -7,7 +7,6 @@ describe MovieStore::Movie do
 
       expect(movie).to be_a(MovieStore::Movie)
       expect(movie.title).to eq("Raiders of the Lost Ark, Pt. II")
-      expect(movie.price_code).to eq(1)
     end
   end
 end
