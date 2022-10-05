@@ -16,12 +16,21 @@
 >
 > – _Refactoring: Ruby Edition, Chapter 1, pp. 10_ (emphasis mine)
 
+- I find myself doing this all the time.
+
 > Any fool can write code that a computer can understand.
 > Good programmers write code that humans can understand.
 >
 > – _Refactoring: Ruby Edition, Chapter 1, pp. 11_
 
+- There's a lot of wisdom in this - and I don't think any engineer at any level can get past ever learning this.
+
 > I often refactor when I'm reading some code.
 > That way as I gain understanding, about the program, I embed that understanding into the code for later so I don't forget what I learned.
 >
 > – _Refactoring: Ruby Edition, Chapter 1, pp. 11_
+
+- I love the idea of "Refactoring for learning" - it was first introduced to me in [Sandi Metz talk, "All the Little Things."](https://www.youtube.com/watch?v=8bZh5LMaSmE&list=PLqal2KPbpmUwQurG_ixyT9pAHcesUjvJ5&index=4)
+
+
+- Loops can be replaced with the "Collection Closure" method, ref: https://refactoring.com/catalog/replaceLoopWithCollectionClosureMethod.html
