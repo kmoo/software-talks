@@ -33,7 +33,7 @@ module MovieStore
   private
 
     def total_charge
-      @rentals.inject(0) { |sum, rental| sum + rental.charge }
+      @rentals.reduce(0) { |sum, rental| sum + rental.charge }
     end
   end
 end
