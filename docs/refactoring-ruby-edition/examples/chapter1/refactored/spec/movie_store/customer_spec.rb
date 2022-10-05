@@ -17,13 +17,17 @@ describe MovieStore::Customer do
     end
 
     context "with rentals" do
-      let(:movie) { MovieStore::Movie.new("The Gooneys", MovieStore::Movie::CHILDRENS) }
-      let(:rental) { MovieStore::Rental.new(movie, 5) }
+      let(:movie1) { MovieStore::Movie.new("The Gooneys", MovieStore::Movie::CHILDRENS) }
+      let(:rental1) { MovieStore::Rental.new(movie1, 5) }
+
+      let(:movie2) { MovieStore::Movie.new("Bee Movie", MovieStore::Movie::NEW_RELEASE) }
+      let(:rental2) { MovieStore::Rental.new(movie2, 2) }
 
       it "displays a statement with totals" do
-        subject.add_rental(rental)
+        subject.add_rental(rental1)
+        subject.add_rental(rental2)
 
-        expect(subject.statement).to eq("Rental Record for Luke Moorman\n\tThe Gooneys\t4.5\nYour amount owed is 4.5\nYou earned 1 frequent renter points")
+        expect(subject.statement).to eq("Rental Record for Luke Moorman\n\tThe Gooneys\t4.5\n\tBee Movie\t6\nYour amount owed is 10.5\nYou earned 3 frequent renter points")
       end
     end
   end
