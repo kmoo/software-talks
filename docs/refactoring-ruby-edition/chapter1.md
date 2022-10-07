@@ -32,7 +32,8 @@
 
 - I love the idea of "Refactoring for learning" - it was first introduced to me in [Sandi Metz talk, "All the Little Things."](https://www.youtube.com/watch?v=8bZh5LMaSmE&list=PLqal2KPbpmUwQurG_ixyT9pAHcesUjvJ5&index=4)
 
-
 - Loops can be replaced with the "Collection Closure" method, ref: https://refactoring.com/catalog/replaceLoopWithCollectionClosureMethod.html
+
+## Discussion Notes
 
 - [@mellowfish](https://github.com/mellowfish) shared a great quote which was relevant to the Refactoring discussion -> [“Make it work, make it right, make it fast.” by Kent Beck](https://www.kentbeck.com/). He actually rememebered an interesting evolved version of the quote, but I can't find the attribution anywhere (so I guess the credit is his!): “Make it right, make it readable, make it responsive, make it reusable.”
