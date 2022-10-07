@@ -34,3 +34,5 @@
 
 
 - Loops can be replaced with the "Collection Closure" method, ref: https://refactoring.com/catalog/replaceLoopWithCollectionClosureMethod.html
+
+- [@mellowfish](https://github.com/mellowfish) shared a great quote which was relevant to the Refactoring discussion -> [“Make it work, make it right, make it fast.” by Kent Beck](https://www.kentbeck.com/). He actually rememebered an interesting evolved version of the quote, but I can't find the attribution anywhere (so I guess the credit is his!): “Make it right, make it readable, make it responsive, make it reusable.”
