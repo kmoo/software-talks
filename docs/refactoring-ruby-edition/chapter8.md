@@ -56,7 +56,7 @@
 > With an object you can use names of fields and methods to convey this information so you don't have to remember it or hope the comments are up to date.
 > You can also encapsulate the information and use Move Method to add behavior to it.
 > 
-> – _Refactoring: Ruby Edition, Chapter 8, pp. 201
+> – _Refactoring: Ruby Edition, Chapter 8, pp. 201_
 
 ### Refactor with Deprecation
 
@@ -67,6 +67,51 @@
 - Just makes sense. Working with JSON-based APIs for fetching data, we have needed to do (or should have done) this a lot.
 
 ### Change Unidirectional Association to Bidirectional
+
+- This makes sense, but there were several nuances on page 212 that feel worthy of re-reading. I can't capture them easily here.
+
+### Change Bidirectional Association to Unidirectional
+
+> Bidirectional associations are useful, but they carry a price.
+> The price is the added complexity of maintaining the two-way links and ensuring that objects are properly created and removed.
+> Bidirectional associations are not natural for many programmers, so they often are a source of errors.
+>
+> Having many two-way links also makes it easy for mistakes to lead to zombies: objects that should be dead but still hang around because of a reference that was not cleared.
+> 
+> Bidirectional associations force an interdependency between two classes. Any change to one class may cause a change to another.
+> Many interdependencies lead to a highly coupled system, in which any little change leads to a lot of unpredictable ramifications.
+> 
+> – _Refactoring: Ruby Edition, Chapter 8, pp. 214_
+
+- I feel like unnecessary bidirectional association may be very hard to discern / recognize when entering a code-base. 
+- `"The most difficult part of this refactoring is checking that I can do it" - Refactoring: Ruby Edition, Chapter 8, pp. 216`
+
+### Replace Magic Numbers with Symbolic Constant
+
+- This seems to be truly about just giving things proper names, conveying the right meaning, and preventing lost context over time.
+- This "Replace Magic Numbers with Symbolic Constant" refactor could save hours of heart-ache in debugging something later on!
+
+### Encapsulate Collection
+
+> Make it return a copy of the collection and provide add/remove methods.
+>
+> – _Refactoring: Ruby Edition, Chapter 8, pp. 219_
+
+> The attribute reader should not return the collection object itself, because that allows clients to manipulate the contents of the collection without the owning class knowing what is going on.
+> It also reveals too much to clients about the object's internal data structures.
+> An attribute reader for a multivalued attribute should return something that prevents the manipulation of the collection and hides unnecessary details about its structure.
+>
+> In addition there should not be an attribute writer for the collection: rather, there should be operations to add and remove elements.
+> This gives the owning object control over adding and removing elements from the collection.
+> 
+> – _Refactoring: Ruby Edition, Chapter 8, pp. 219_
+
+- This example is very simple. I've definitely made the mistake of _not_ doing this in the past, and it has bitten me!
+- I like his parting thought here, `"A few years ago I was concerned that moving this kind of begavior over to the Person would lead to a bloated Person class. In practice, I've found that this usually isn't a problem." - Refactoring: Ruby Edition, Chapter 8, pp. 224`
+
+### Replace Record with Data Class
+
+- No thoughts
 
 ## Discussion Notes
 
