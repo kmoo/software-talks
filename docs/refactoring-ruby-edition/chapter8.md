@@ -115,4 +115,12 @@
 
 ## Discussion Notes
 
-- TBD
+- Deprecation messages was creative (205)
+  - Make sure to be clear about what the new interface is, and when things are deprecated and not being replaced, too
+- What is he doing with `def []=`? (208)
+  - Overriding the operator in Ruby, to make an Object like a Hash. In this case, he is defining a setter, and `def []` is a getter.
+- Is Bidirectional association as big of a risk in Ruby? (210ish)
+  - Not as much of a risk because Ruby's garbage collection is smart enough to clean up after itself (need reference)
+- Magic Numbers... (217) my story of same number in similar places, two different meanings causing a bug
+  - @mellowfish - "I would just say 'Magic Primitive' instead of just Magic Number! Do this for all the primitives."
+  - Avoid these constants if it all possible. Use something smarter provided by the API (like `array.size` instead of a constant that happens to know the length of the array, or a `"Saturday" or "Sunday"` string instead of a `day.is_weekend?`)
