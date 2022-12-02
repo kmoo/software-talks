@@ -115,6 +115,8 @@
 
 ## Discussion Notes
 
+### November 18, 2022
+
 - Deprecation messages was creative (205)
   - Make sure to be clear about what the new interface is, and when things are deprecated and not being replaced, too
 - What is he doing with `def []=`? (208)
@@ -122,5 +124,13 @@
 - Is Bidirectional association as big of a risk in Ruby? (210ish)
   - Not as much of a risk because Ruby's garbage collection is smart enough to clean up after itself (need reference)
 - Magic Numbers... (217) my story of same number in similar places, two different meanings causing a bug
-  - @mellowfish - "I would just say 'Magic Primitive' instead of just Magic Number! Do this for all the primitives."
+  - [@mellowfish](https://github.com/mellowfish) - "I would just say 'Magic Primitive' instead of just Magic Number! Do this for all the primitives."
   - Avoid these constants if it all possible. Use something smarter provided by the API (like `array.size` instead of a constant that happens to know the length of the array, or a `"Saturday" or "Sunday"` string instead of a `day.is_weekend?`)
+
+### December 2, 2022
+
+- Replace Type Code with Module Extension (232)
+- Replace Subclass with Fields - seems worse than before (251)
+  - But maybe `Male` & `Female` were too far - and in the code all we care about is `Person` and those are just attributes on that object. 
+- We are very much a lazily-loaded team (255)
+  - [@mellowfish](https://github.com/mellowfish) - I like my initializers to be very simple. As long as you are doing your dependencies correctly and making sure you call the method before you use it. Also, this fits well with using `attr_reader`'s (it goes hand-in-hand).
