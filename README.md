@@ -18,3 +18,4 @@ My notes as I read through books, watch talks and generally just learn!
 
 - [How Duolingo reignited user growth by Jorge Mazal](docs/how_duolingo_reignited_user_growth.md)
 - [Engineers Shouldn’t Write ETL: A Guide to Building a High Functioning Data Science Department](https://multithreaded.stitchfix.com/blog/2016/03/16/engineers-shouldnt-write-etl/)
+- [Artwork Personalization at Netflix](https://netflixtechblog.com/artwork-personalization-c589f074ad76)
