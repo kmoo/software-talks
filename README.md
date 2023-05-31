@@ -12,6 +12,7 @@ My notes as I read through books, watch talks and generally just learn!
 
 - [SOLID Object-Oriented Design by Sandi Metz](docs/solid_object_oriented_design_by_sandi_metz.md)
 - [Go Ahead Make a Mess by Sandi Metz](docs/go_ahead_make_a_mess_by_sandi_metz.md)
+- [All the Little Things](https://www.youtube.com/watch?v=8bZh5LMaSmE)
 
 ### Articles
 
