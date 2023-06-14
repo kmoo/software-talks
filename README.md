@@ -20,5 +20,7 @@ My notes as I read through books, watch talks and generally just learn!
 - [Engineers Shouldn’t Write ETL: A Guide to Building a High Functioning Data Science Department](https://multithreaded.stitchfix.com/blog/2016/03/16/engineers-shouldnt-write-etl/)*
 - [Artwork Personalization at Netflix](https://netflixtechblog.com/artwork-personalization-c589f074ad76)*
 - [Twitter's Recommendation Algorithm](https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)*
+- [DesignStaminaHypothesis](https://martinfowler.com/bliki/DesignStaminaHypothesis.html)*
+- [TradeableQualityHypothesis](https://martinfowler.com/bliki/TradableQualityHypothesis.html)*
 
 *Either a direct link to the media or with incomplete notes
