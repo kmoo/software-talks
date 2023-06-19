@@ -12,3 +12,7 @@
 ## Articles
 
 - [How Duolingo reignited user growth by Jorge Mazal](docs/how_duolingo_reignited_user_growth.md)
+
+## Workshops
+
+- [Learn .NET MAUI - Full Course for Beginners | Build cross-platform apps in C#](docs/learn_dotnet_maui.md)
