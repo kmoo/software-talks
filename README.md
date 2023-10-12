@@ -6,6 +6,7 @@ My notes as I read through books, watch talks and generally just learn!
 
 ### Books
 
+- [Refactoring: Improving the Design of Existing Code, 1st Edition by Martin Fowler with Kent Beck](docs/books/refactoring/index.md)
 - [Refactoring: Ruby Edition by Jay Fields, Shane Harvie, and Martin Fowler with Kent Beck](docs/books/refactoring-ruby-edition/index.md)*
 - [99 Bottles of OOP by Sandi Metz, Katrina Owen and TJ Stankus](docs/books/99_bottles_of_oop/index.md)*
 
