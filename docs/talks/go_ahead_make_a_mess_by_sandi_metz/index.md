@@ -6,7 +6,7 @@
 
 ### Life Cycle of a Rails Project
 
-![img.png](go_ahead_make_a_mess_by_sandi_metz/img.png)
+![img.png](img.png)
 
 1. 
 - You write an app and everyone thinks your a genius
@@ -32,11 +32,11 @@
 
 ### Satisfaction
 
-![img_1.png](go_ahead_make_a_mess_by_sandi_metz/img_1.png)
+![img_1.png](img_1.png)
 
 `"You were fast now you're slow, you were happy now you're sad, you were cost effective and now you're a money pit! The app was amazing and now it's just a mess. And this does not mean that it's time to look for a new job."`
 
-![img_2.png](go_ahead_make_a_mess_by_sandi_metz/img_2.png)
+![img_2.png](img_2.png)
 
 🔥 `"Unless you do something different you are going to end up hating every app you've ever write."`
 
@@ -50,11 +50,11 @@ You're app is like a tapestry... So interwoven together..
 
 But it's not like this furry scene with these little lambs
 
-![img_3.png](go_ahead_make_a_mess_by_sandi_metz/img_3.png)
+![img_3.png](img_3.png)
 
 No you're app is trying to kill you!
 
-![img_4.png](go_ahead_make_a_mess_by_sandi_metz/img_4.png)
+![img_4.png](img_4.png)
 
 Can't pull on something without breaking others...
 
@@ -88,7 +88,7 @@ Can't pull on something without breaking others...
 
 ### Label the Knowledge - Example #1
 
-![img_5.png](go_ahead_make_a_mess_by_sandi_metz/img_5.png)
+![img_5.png](img_5.png)
 
 #### Omega Mess
 
@@ -96,7 +96,7 @@ Can't pull on something without breaking others...
 - It is at the end of the line, has no dependencies and no dependants.
 - Should we leave it, or change it? What are the consequences of walking away right now?
 
-![img_6.png](go_ahead_make_a_mess_by_sandi_metz/img_6.png)
+![img_6.png](img_6.png)
 
 ### Complicate the Code - Example #2
 

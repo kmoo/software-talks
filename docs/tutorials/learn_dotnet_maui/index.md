@@ -22,7 +22,7 @@
 
 - Everything inside a Maui application is a single-project
 
-![](./learn_dotnet_maui/img_1.png)
+![](img_1.png)
 
 #### Flyover of Concepts
 

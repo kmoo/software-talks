@@ -8,7 +8,7 @@
     - But... **Design might save you** 🦸
 - The [Design Stamina Hypothesis](http://www.martinfowler.com/bliki/DesignStaminaHypothesis.html) says that, after a certain point, you’ll have done better if you had designed first.
 
-    ![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled.png)
+    ![Untitled](Untitled.png)
     
 
 ❗The goal here is to have maintainable code.
@@ -48,11 +48,11 @@ Let's talk about these from the bottom-up, and then throw some out to make it ea
 - "This code doesn't tolerate change!"
 - Should we refactor just because we can? Or should I just stop now?
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%201.png)
+![Untitled](Untitled%201.png)
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%202.png)
+![Untitled](Untitled%202.png)
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%203.png)
+![Untitled](Untitled%203.png)
 
 ### 🔥"Resistance is a Resource"
 
@@ -78,39 +78,39 @@ Let's talk about these from the bottom-up, and then throw some out to make it ea
 
 ## 2. Second Pass - Does it have one responsibility?
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%204.png)
+![Untitled](Untitled%204.png)
 
 - Why does it have more than one responsibility? And in this case is bad. Or, is even worse!
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%205.png)
+![Untitled](Untitled%205.png)
 
 - Now, we can "mock" between Job & Downloader!
 
 - Dependency injection 👇
     
-    ![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%206.png)
+    ![Untitled](Untitled%206.png)
     
 
 ## 3. Third Pass - Does this change at the same rate?
 
 - This makes me uneasy because it contains a path and file name that are pretty likely to change 👇
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%207.png)
+![Untitled](Untitled%207.png)
 
 - Side note - This is how I approach refactoring
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%208.png)
+![Untitled](Untitled%208.png)
 
 - Next thing I want to do is pull out Patent Config
     - We don't need to mock it! Be careful of the "Mock Everything" people
     
-    ![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%209.png)
+    ![Untitled](Untitled%209.png)
     
 - Tests need to change per environment
     - Sometimes while in test, we need to pretend we're in Production, that way we know it's okay in more than just test
     - She is injecting `env=Rails.env` but says we should probably never actually do that, and instead just stub it
     
-    ![Luke Thought about this: I don't get bothered in the same way Sandi does by these things. I'd love to learn more about why she thinks the way she does. "But what about that? This is an if-statement. And if another environment appears you can bet your bottom dollar I'm going to have to change this code. It is a code smell in any Object-Oriented Class if you have an if-statement. [...] As an Object I ought to know what kind of thing I am, and I ought to do the right thing because of what I am." - Sandi.](solid_object_oriented_design_by_sandi_metz/Untitled%2010.png)
+    ![Luke Thought about this: I don't get bothered in the same way Sandi does by these things. I'd love to learn more about why she thinks the way she does. "But what about that? This is an if-statement. And if another environment appears you can bet your bottom dollar I'm going to have to change this code. It is a code smell in any Object-Oriented Class if you have an if-statement. [...] As an Object I ought to know what kind of thing I am, and I ought to do the right thing because of what I am." - Sandi.](Untitled%2010.png)
     
     Luke Thought about this: I don't get bothered in the same way Sandi does by these things. I'd love to learn more about why she thinks the way she does. "But what about that? This is an if-statement. And if another environment appears you can bet your bottom dollar I'm going to have to change this code. It is a code smell in any Object-Oriented Class if you have an if-statement. [...] As an Object I ought to know what kind of thing I am, and I ought to do the right thing because of what I am." - Sandi.
     
@@ -125,9 +125,9 @@ Let's talk about these from the bottom-up, and then throw some out to make it ea
 
 - `patent.yml` leads us to a place where our code is not dry
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%2011.png)
+![Untitled](Untitled%2011.png)
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%2012.png)
+![Untitled](Untitled%2012.png)
 
 - 👆We can absolutely rely on this and never worry about if these methods are here or not
 
@@ -144,15 +144,15 @@ Let's talk about these from the bottom-up, and then throw some out to make it ea
 
 - So put things on a scale 👇
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%2013.png)
+![Untitled](Untitled%2013.png)
 
 - Lower numbers are good
 
 - This is wrong, FTPDownloader shouldn't know about this, PatentJob should: 👇
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%2014.png)
+![Untitled](Untitled%2014.png)
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%2015.png)
+![Untitled](Untitled%2015.png)
 
 - Now the app looks like this 👆
 
@@ -168,11 +168,11 @@ Let's talk about these from the bottom-up, and then throw some out to make it ea
 
 - Don't know the name of the class!
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%2016.png)
+![Untitled](Untitled%2016.png)
 
 - So put it in the config file
 
-![Untitled](solid_object_oriented_design_by_sandi_metz/Untitled%2017.png)
+![Untitled](Untitled%2017.png)
 
 - NOW WE'RE DONE!! 🎉🎉
 
@@ -185,6 +185,6 @@ Let's talk about these from the bottom-up, and then throw some out to make it ea
 - **READ THESE**
     - Robert C. Martin -
         
-        [Principles_and_Patterns.pdf](solid_object_oriented_design_by_sandi_metz/Principles_and_Patterns.pdf)
+        [Principles_and_Patterns.pdf](Principles_and_Patterns.pdf)
         
     - Steve Freeman and Nat Pryce - [https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627)
