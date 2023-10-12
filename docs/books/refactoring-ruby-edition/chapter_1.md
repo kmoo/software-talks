@@ -3,10 +3,10 @@
 ## Code Examples
 
 **Original**:
-- [examples/chapter1/original](examples/chapter1/original)
+- [examples/chapter_1/original](examples/chapter_1/original)
 
 **Refactored**:
-- [examples/chapter1/refactored](examples/chapter1/refactored)
+- [examples/chapter_1/refactored](examples/chapter_1/refactored)
 
 ## Notes
 
