@@ -6,6 +6,8 @@
 
 ### The First Step in Refactoring
 
+- Write tests (for that section of the code)!
+
 ### Decomposing and Redistributing the Statement Method
 
 ### Replacing the Conditional Logic on Price Code with Polymorphism
